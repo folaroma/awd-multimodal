@@ -1,0 +1,30 @@
+.preloader {
+  position: fixed;
+  z-index: 1700;
+  display: flex;
+  background-color: white;
+  left: 0;
+  right: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut ease 3s;
+  animation-delay: 3s;
+}
+
+.preloader-text {
+  opacity: 0;
+  font-size: 50px;
+  font-family: "CircularStd-Black";
+  animation: fadeIn ease 2s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1 }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0 }
+}

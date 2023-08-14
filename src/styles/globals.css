@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'CircularStd-Black';
+  src: local('CircularStd-Black'), url(../fonts/Circular/CircularStd-Black.otf) format('opentype');
+}
+@font-face {
+  font-family: 'CircularStd-Medium';
+  src: local('CircularStd-Medium'), url(../fonts/Circular/CircularStd-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: 'CircularStd-Light';
+  src: local('CircularStd-Light'), url(../fonts/Circular/CircularStd-Light.otf) format('opentype');
+}
+
+
+body {
+  overflow: hidden;
+}

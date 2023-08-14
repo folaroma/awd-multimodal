@@ -1,0 +1,11 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  font-family: "CircularStd-Black";
+  margin-top: 1em;
+}
