@@ -11,7 +11,46 @@
   src: local('CircularStd-Light'), url(../fonts/Circular/CircularStd-Light.otf) format('opentype');
 }
 
-
 body {
   overflow: hidden;
+}
+
+.right-page-icon {
+  position: absolute;
+  color: black;
+  right: 1.5em;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-page-icon {
+  position: absolute;
+  color: black;
+  left: 3em;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.song-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  height: auto;
+  margin: 0;
+}
+
+.song {
+  margin-top: 10em;
+}
+
+.lyrics {
+  margin-left: 4em;
+}
+
+.blurb {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5em;
 }
