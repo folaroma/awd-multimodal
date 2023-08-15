@@ -1,4 +1,3 @@
-'use client'
 import styles from '../styles/globals.css';
 import Image from 'next/image';
 import Home from './Home';
@@ -12,13 +11,13 @@ import SZA from "./Artists/SZA/";
 import Frank from "./Artists/Frank/";
 import CSH from "./Artists/CSH/";
 
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
     <>
     <div className="App">
-      <HashRouter>
+      <BrowserRouter>
         <Preloader />
         <Header />
         <Routes>
@@ -30,7 +29,7 @@ export default function App() {
             <Route path="/csh" element={<CSH/>} />
         </Routes>
         <Footer/>
-      </HashRouter>
+      </BrowserRouter>
     </div>
     </>
   )
