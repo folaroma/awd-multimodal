@@ -1,5 +1,5 @@
 import styles from '../../styles/preloader.css'
-import { setState, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function Preloader() {
   const [show, setShow] = useState(true);
