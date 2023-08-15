@@ -1,3 +1,4 @@
+'use client'
 import styles from '../styles/globals.css';
 import Image from 'next/image';
 import Home from './Home';
