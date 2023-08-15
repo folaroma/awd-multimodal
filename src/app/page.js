@@ -12,13 +12,20 @@ import SZA from "./Artists/SZA/";
 import Frank from "./Artists/Frank/";
 import CSH from "./Artists/CSH/";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+
 
 export default function App() {
-  return (
-    <>
-    <div className="App">
-      <BrowserRouter>
+  const [isClient, setIsClient] = useState(false)
+ 
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+  return isClient ? (
+    <div id="root">
+      <Router>
         <Preloader />
         <Header />
         <Routes>
@@ -30,8 +37,7 @@ export default function App() {
             <Route path="/csh" element={<CSH/>} />
         </Routes>
         <Footer/>
-      </BrowserRouter>
+      </Router>
     </div>
-    </>
-  )
+  ) : null;
 }
